@@ -1,0 +1,46 @@
+:root{
+    --blue: #78ee58;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+p{
+    text-decoration: underline;
+    font-size: 20px;
+}
+.transiciones, .animaciones, .transformaciones{
+    width: 100px;
+    height: 100px;
+    background-color: var(--blue);
+}
+
+.transiciones{
+    transition: width 2s;
+}
+
+.transiciones:hover{
+    width: 200px;
+}
+
+/* .animaciones:hover{
+    animation: example 10s ease;
+
+} */
+
+.animaciones{
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite ;
+    animation-fill-mode: both;
+}
+
+@keyframes example{
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
